@@ -2,18 +2,34 @@ import React, { Component } from 'react';
 import { withRouter, Link } from 'react-router-dom'; 
 import Profile from '../img/profile.jpg';
 import styled from 'styled-components';
+import './styles.css';
 
 const HoverLink = styled.a`
-    margin: 10px
-    margin-bottom: 20px
-    font-size: 25px
-    text-decoration: none
-    color: white
+    margin: 10px;
+    margin-bottom: 20px;
+    font-size: 25px;
+    text-decoration: none;
+    color: grey;
 	:hover {
-		color: grey;
+		color: white;
 		cursor: pointer;
 	}
 `
+
+{/* 
+    const HoverIcon= styled.a`
+    font-size: 50px;
+    margin-right: 20px;
+    color: grey;
+    transform: translate(0%);
+    transition: 0.3s ease-out;
+	:hover {
+        position: fixed;
+		transform: translate(0%, -30%);
+        transition: 0.3s ease-out;
+	}
+`
+*/}
 
 class Projects extends Component {
 
@@ -38,9 +54,9 @@ class Projects extends Component {
                             I began coding by teaching myself HTML, CSS, and Javascript at night.  
                             Currently I am developing applications in React and Node.
                             <div style={{ marginTop: "20px" }}>
-                                <a href="#" style={{ fontSize: "50px", marginRight: "20px", color: "grey"}}><i class="fab fa-twitter-square"></i></a>
-                                <a href="#" style={{ fontSize: "50px", marginRight: "20px", color: "grey"}}><i class="fab fa-linkedin"></i></a>
-                                <a href="#" style={{ fontSize: "50px", color: "grey"}}><i class="fab fa-github-square"></i></a>
+                                <a class="hover-icon" href="#"><i class="fab fa-twitter-square"></i></a>
+                                <a class="hover-icon" href="#"><i class="fab fa-linkedin"></i></a>
+                                <a class="hover-icon" href="#"><i class="fab fa-github-square"></i></a>
                             </div>
                         </div>
                     </div>
