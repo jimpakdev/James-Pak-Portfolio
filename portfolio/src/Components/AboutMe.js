@@ -4,11 +4,12 @@ import Profile from '../img/profile.jpg';
 import styled from 'styled-components';
 
 const HoverLink = styled.a`
-    margin: 10px
-    margin-bottom: 20px
-    font-size: 25px
-    text-decoration: none
-    color: white
+    margin: 10px;
+    margin-bottom: 20px;
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
 	:hover {
 		color: grey;
 		cursor: pointer;
@@ -20,8 +21,8 @@ class AboutMe extends Component {
     render() {
 
         return (
-            <>  <div style={{backgroundColor: "black", backgroundPosition: "center", backgroundSize: "cover", height: "740px", opacity: "0.9"}}>
-                    <div style={{ display: "flex", flexDirection: "row", justifyContent: "flex-start", alignItems: "center", width: "auto", paddingTop: "60px"}}>
+            <>  <div style={{backgroundColor: "black", backgroundPosition: "center", backgroundSize: "cover", height: "100vh", width: "100%", opacity: "0.9"}}>
+                    <div style={{ display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center", width: "auto", paddingTop: "60px"}}>
 
                         <div style={{ display: "flex", flexDirection: "column", marginLeft: "100px", marginRight: "30px" }}>
                             <HoverLink href="/">About me</HoverLink>
@@ -45,16 +46,19 @@ class AboutMe extends Component {
                         </div>
                     </div>
 
+                    
                     <div style={{ display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center", marginTop: "240px", width: "auto", color: "white", fontFamily: "Monaco" }}> 
                         LEARN MORE
                     </div>
+                    
 
                     <div style={{ display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center", marginTop: "20px", width: "auto" }}>
                         <i class="fas fa-arrow-down" style={{ color: "white"}}></i>
                     </div>
+                    
                 </div>
 
-                    <div style={{ display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", width: "auto", height: "300px", backgroundColor: "lightgrey", }}>
+                    <div style={{ display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", width: "auto", height: "100%", backgroundColor: "lightgrey", }}>
                         <div style={{ fontSize: "30px", marginTop: "40px",}}>
                             Currently living in Redwood City, California
                         </div>

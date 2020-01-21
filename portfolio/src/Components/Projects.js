@@ -8,6 +8,7 @@ const HoverLink = styled.a`
     margin: 10px;
     margin-bottom: 20px;
     font-size: 25px;
+    font-weight: bold;
     text-decoration: none;
     color: grey;
 	:hover {
@@ -36,8 +37,8 @@ class Projects extends Component {
     render() {
 
         return (
-            <>  <div style={{backgroundColor: "black", backgroundPosition: "center", backgroundSize: "cover", height: "480px", opacity: "0.9"}}>
-                    <div style={{ display: "flex", flexDirection: "row", justifyContent: "flex-start", alignItems: "center", width: "auto", paddingTop: "60px"}}>
+            <>  <div style={{backgroundColor: "black", backgroundPosition: "center", backgroundSize: "cover", height: "480px", width: "100%", opacity: "0.9"}}>
+                    <div style={{ display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center", width: "auto", paddingTop: "60px"}}>
 
                         <div style={{ display: "flex", flexDirection: "column", marginLeft: "100px", marginRight: "30px" }}>
                             <HoverLink href="/">About me</HoverLink>
