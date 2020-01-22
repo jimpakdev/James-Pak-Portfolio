@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { withRouter, Link } from 'react-router-dom'; 
 import Profile from '../img/profile.jpg';
+import Anime from '../img/anime.jpg';
 import styled from 'styled-components';
 
 const HoverLink = styled.a`
@@ -58,19 +59,42 @@ class AboutMe extends Component {
                     
                 </div>
 
-                    <div style={{ display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", width: "auto", height: "100%", backgroundColor: "lightgrey", }}>
-                        <div style={{ fontSize: "30px", marginTop: "40px",}}>
-                            Currently living in Redwood City, California
-                        </div>
+                
 
-                        <div style={{ fontSize: "30px", marginTop: "40px",}}>
-                            Contact me: jamesjiminpak@gmail.com
+                    <div style={{ display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", width: "auto", height: "100vh", backgroundColor: "lightgrey", }}>
+                        
+                        <div style={{margin: "0 auto", width: "100%", maxWidth: "1000px" }}>
+
+                            <div style={{  display: "flex", justifyContent: "space-around" }}>
+                                
+                                <div style={{ display: "flex", flexDirection: "column", alignItems: "left", padding: "10px", margin: "20px", boxSizing: "border-box", boxShadow: "0 4px 8px 0 rgba(0, 0, 0, 0.2)", width: "60%", borderRadius: "5px", backgroundColor: "grey", opacity: "0.5" }}>
+                                    <div style={{ fontSize: "30px", color: "black", fontWeight: "bold", textAlign: "left"}}>
+                                        James Jimin Pak
+
+                                    </div>
+                                    
+                                    <div style={{ fontSize: "30px", marginTop: "40px", color: "black", fontWeight: "bold", textAlign: "left"}}>
+                                        Currently living in <br></br>
+                                        Redwood City, California
+
+                                    </div>
+
+                                    <div style={{ fontSize: "30px", marginTop: "40px", color: "black", fontWeight: "bold", textAlign: "left" }}>
+                                        Contact me <br></br> 
+                                        jamesjiminpak@gmail.com
+                                    </div>
+                                </div>
+
+                                <img src={Anime} style={{ width: "40%", height: "10%", margin: "20px", borderRadius: "5px", boxShadow: "0 4px 8px 0 rgba(0, 0, 0, 0.2)", cursor: "pointer" }} />
+				            </div>
+
                         </div>
+                        
 
                         <div style={{ marginTop: "40px" }}>
-                            <a href="#" style={{ fontSize: "50px", marginRight: "20px", color: "black"}}><i class="fab fa-twitter-square"></i></a>
-                            <a href="#" style={{ fontSize: "50px", marginRight: "20px", color: "black"}}><i class="fab fa-linkedin"></i></a>
-                            <a href="#" style={{ fontSize: "50px", color: "black"}}><i class="fab fa-github-square"></i></a>
+                            <a href="#" style={{ fontSize: "50px", marginRight: "20px", color: "black", opacity: "0.5"}}><i class="fab fa-twitter-square"></i></a>
+                            <a href="#" style={{ fontSize: "50px", marginRight: "20px", color: "black", opacity: "0.5"}}><i class="fab fa-linkedin"></i></a>
+                            <a href="#" style={{ fontSize: "50px", color: "black", opacity: "0.5"}}><i class="fab fa-github-square"></i></a>
                         </div>
                     </div>
 
