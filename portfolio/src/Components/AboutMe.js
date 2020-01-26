@@ -22,7 +22,7 @@ class AboutMe extends Component {
     render() {
 
         return (
-            <>  <div style={{backgroundColor: "black", backgroundPosition: "center", backgroundSize: "cover", height: "50vh", width: "100%", opacity: "0.9"}}>
+            <>  <div style={{backgroundColor: "black", backgroundPosition: "center", backgroundSize: "cover", height: "100vh", width: "100%", opacity: "0.9"}}>
                     <div style={{ display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center", width: "auto", paddingTop: "60px"}}>
 
                         <div style={{ display: "flex", flexDirection: "column", marginLeft: "100px", marginRight: "30px" }}>
@@ -47,23 +47,24 @@ class AboutMe extends Component {
                         </div>
                     </div>
 
-                    {/*
-                    <div style={{ display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center", marginTop: "240px", width: "auto", color: "white", fontFamily: "Monaco" }}> 
-                        LEARN MORE
+                    <div style={{ display: "flex", flexDirection: "column", justifyContent: "center", alignContent: "flex-end", height: "300px" }}>
+                        <div style={{ display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center", width: "auto", color: "white", fontFamily: "Monaco" }}> 
+                            LEARN MORE
+                        </div>
+                        
+
+                        <div style={{ display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center", marginTop: "20px", width: "auto" }}>
+                            <i class="fas fa-arrow-down" style={{ color: "white"}}></i>
+                        </div>
                     </div>
                     
-
-                    <div style={{ display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center", marginTop: "20px", width: "auto" }}>
-                        <i class="fas fa-arrow-down" style={{ color: "white"}}></i>
-                    </div>
-                    */}
                 </div>
 
                 
 
-                    <div style={{ display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", width: "auto", height: "50vh", backgroundColor: "lightgrey", }}>
+                    <div style={{ display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", width: "auto", maxHeight: "800px", backgroundColor: "lightgrey", }}>
                         
-                        <div style={{margin: "0 auto", width: "100%", }}>
+                        <div style={{margin: "0 auto", width: "100%", marginTop: "40px", marginBottom: "40px" }}>
 
                             <div style={{  display: "flex", justifyContent: "space-around", margin: "0 auto", width: "100%", maxWidth: "1000px" }}>
                                 

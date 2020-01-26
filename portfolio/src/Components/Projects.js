@@ -37,7 +37,7 @@ class Projects extends Component {
     render() {
 
         return (
-            <>  <div style={{backgroundColor: "black", backgroundPosition: "center", backgroundSize: "cover", height: "50vh", width: "100%", opacity: "0.9"}}>
+            <>  <div style={{backgroundColor: "black", backgroundPosition: "center", backgroundSize: "cover", height: "60vh", width: "100%", opacity: "0.9"}}>
                     <div style={{ display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center", width: "auto", paddingTop: "60px"}}>
 
                         <div style={{ display: "flex", flexDirection: "column", marginLeft: "100px", marginRight: "30px" }}>
@@ -53,7 +53,7 @@ class Projects extends Component {
                             Hi!  I'm James.  I'm a full stack developer with a passion for building.  
                             I come from a non traditional tech background as I was previously a project manager in the construction industry.
                             I began coding by teaching myself HTML, CSS, and Javascript at night.  
-                            Currently I am developing applications in React, Node with Express, and Python.
+                            Currently I am developing applications in React and Node.
                             <div style={{ marginTop: "20px" }}>
                                 <a class="hover-icon" href="#"><i class="fab fa-twitter-square"></i></a>
                                 <a class="hover-icon" href="#"><i class="fab fa-linkedin"></i></a>
