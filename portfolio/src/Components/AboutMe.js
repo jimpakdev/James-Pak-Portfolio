@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { withRouter, Link } from 'react-router-dom'; 
+import { withRouter } from 'react-router-dom'; 
 import Profile from '../img/profile.jpg';
 import Snowboard from '../img/snowboard.jpg';
 import Glasses from '../img/glasses.jpg';

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { withRouter, Link } from 'react-router-dom'; 
+import { withRouter } from 'react-router-dom'; 
 import Profile from '../img/profile.jpg';
 import styled from 'styled-components';
 import './styles.css';
@@ -37,7 +37,8 @@ class Projects extends Component {
     render() {
 
         return (
-            <>  <div style={{backgroundColor: "black", backgroundPosition: "center", backgroundSize: "cover", height: "60vh", width: "100%", opacity: "0.9"}}>
+            <>  
+                <div style={{backgroundColor: "black", backgroundPosition: "center", backgroundSize: "cover", height: "60vh", width: "100%", opacity: "0.9"}}>
                     <div style={{ display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center", width: "auto", paddingTop: "60px"}}>
 
                         <div style={{ display: "flex", flexDirection: "column", marginLeft: "100px", marginRight: "30px" }}>
