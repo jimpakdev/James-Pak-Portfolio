@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { withRouter, Link } from 'react-router-dom'; 
 import Profile from '../img/profile.jpg';
 import Snowboard from '../img/snowboard.jpg';
+import Glasses from '../img/glasses.jpg';
 import styled from 'styled-components';
 
 const HoverLink = styled.a`
@@ -22,7 +23,7 @@ class AboutMe extends Component {
     render() {
 
         return (
-            <>  <div style={{backgroundColor: "black", backgroundPosition: "center", backgroundSize: "cover", height: "100vh", width: "100%", opacity: "0.9"}}>
+            <>  <div style={{backgroundImage: `url(${Glasses})`, backgroundPosition: "center", backgroundSize: "cover", height: "100vh", width: "100%", }}>
                     <div style={{ display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center", width: "auto", paddingTop: "60px"}}>
 
                         <div style={{ display: "flex", flexDirection: "column", marginLeft: "100px", marginRight: "30px" }}>
@@ -35,19 +36,21 @@ class AboutMe extends Component {
 
 
                         <div style={{display: "flex", flexDirection: "column", alignItems: "flex-start", marginTop: "20px", marginLeft: "60px", maxWidth: "700px", fontFamily: "Rubik", fontSize: "30px", color: "white", lineHeight: "40px"}}>
-                            Hi!  I'm James.  I'm a full stack developer with a passion for building.  
-                            I come from a non traditional tech background as I was previously a project manager in the construction industry.
-                            I began coding by teaching myself HTML, CSS, and Javascript at night.  
-                            Currently I am developing applications in React and Node.
+                            <div style={{ padding: "10px", marginRight: "10px", boxSizing: "border-box", boxShadow: "0 4px 8px 0 rgba(0, 0, 0, 0.2)", width: "100%", borderRadius: "5px", backgroundColor: "grey", }}>
+                                Hi!  I'm James.  I'm a full stack developer with a passion for building.  
+                                I come from a non traditional tech background as I was previously a project manager in the construction industry.
+                                I began coding by teaching myself HTML, CSS, and Javascript at night.  
+                                Currently I am developing applications in React and Node.
+                            </div>
                             <div style={{ marginTop: "20px", }}>
-                                <a href="#" style={{ fontSize: "50px", marginRight: "20px", color: "white", opacity: "0.5"}}><i class="fab fa-twitter-square"></i></a>
-                                <a href="#" style={{ fontSize: "50px", marginRight: "20px", color: "white", opacity: "0.5"}}><i class="fab fa-linkedin"></i></a>
-                                <a href="#" style={{ fontSize: "50px", color: "white", opacity: "0.5"}}><i class="fab fa-github-square"></i></a>
+                                <a href="#" style={{ fontSize: "50px", marginRight: "20px", color: "white", opacity: "0.9"}}><i class="fab fa-twitter-square"></i></a>
+                                <a href="#" style={{ fontSize: "50px", marginRight: "20px", color: "white", opacity: "0.9"}}><i class="fab fa-linkedin"></i></a>
+                                <a href="#" style={{ fontSize: "50px", color: "white", opacity: "0.9"}}><i class="fab fa-github-square"></i></a>
                             </div>
                         </div>
                     </div>
 
-                    <div style={{ display: "flex", flexDirection: "column", justifyContent: "center", alignContent: "flex-end", height: "300px" }}>
+                    <div style={{ display: "flex", flexDirection: "column", justifyContent: "center", alignContent: "flex-end", height: "600px" }}>
                         <div style={{ display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center", width: "auto", color: "white", fontFamily: "Monaco" }}> 
                             LEARN MORE
                         </div>
@@ -62,7 +65,7 @@ class AboutMe extends Component {
 
                 
 
-                    <div style={{ display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", width: "auto", maxHeight: "800px", backgroundColor: "lightgrey", }}>
+                    <div style={{ display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", width: "auto", maxHeight: "800px", }}>
                         
                         <div style={{margin: "0 auto", width: "100%", marginTop: "40px", marginBottom: "40px" }}>
 
