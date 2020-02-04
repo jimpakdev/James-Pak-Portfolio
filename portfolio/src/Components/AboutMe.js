@@ -40,7 +40,7 @@ class AboutMe extends Component {
                                 Hi!  I'm James.  I'm a full stack developer with a passion for building.  
                                 I come from a non traditional tech background as I was previously a project manager in the construction industry.
                                 I began coding by teaching myself HTML, CSS, and Javascript at night.  
-                                Currently I am developing applications in React and Node.
+                                Currently I am developing applications in React.
                             </div>
                             <div style={{ marginTop: "20px", }}>
                                 <a href="#" style={{ fontSize: "50px", marginRight: "20px", color: "white", opacity: "0.9"}}><i class="fab fa-twitter-square"></i></a>
